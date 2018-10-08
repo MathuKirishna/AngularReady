@@ -1,0 +1,77 @@
+<div  *ngFor="let user_detail of user_details"class="row">
+  <div class="column-md-4">
+    <div style = "width:8cm;margin-left:4cm;margin-top:1.5cm;"class="card">
+  <img src="{{user_detail.profile_picture}}" alt="Avatar" style="width:100%;"><hr>
+  <div class="container">
+    <h5 style="color:rgb(175, 10, 10)">DISPLAY NAME :- {{user_detail.display_name}}</h5>
+    <h6>CITY :- {{user_detail.city}}</h6>
+    <h6>EXPERIENCE :- {{user_detail.experience}}</h6>
+    <h6>EDUCATIONAL QUALIFICATIONS :- {{user_detail.educationalQualification}}</h6>
+    <h6>RATING :- {{user_detail.rating}}</h6>
+    <h6>RATE :- {{user_detail.rate}}</h6>
+</div>
+</div>
+</div>
+<div class="column-md-4">
+<div class="row">
+<div style = "width:16cm;margin-left:5cm;margin-top:1.5cm;height:6cm"class="card">
+
+  
+<div class="container mt-3">
+  
+ <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a  style="width:7.5cm;background-color:rgb(175, 10, 10);color: white;"class="nav-link danger" data-toggle="tab" href="#home"><b>Skills</b></a>
+    </li>
+    <li class="nav-item">
+      <a  style="width:7.4cm;background-color:rgb(175, 10, 10);color: white;"class="nav-link" data-toggle="tab" href="#menu1"><b>Description</b></a>
+    </li>
+   
+  </ul>
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <h3>Skills</h3>
+      <p>{{user_detail.skill}}</p>
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Description</h3>
+      <p>{{user_detail.description}}</p>
+    </div>
+   
+     </div>
+     
+
+</div>
+
+</div>
+
+</div>
+<div >
+</div>
+<div  style="margin-top:20px;margin-left:180px ;">
+<h4>My Works...</h4> 
+
+<div *ngFor="let user_gallery of user_galleries">
+
+
+<!-- <section class="slideshow">
+  <div  class="slideshow-container slide"> -->
+      <img style="height:400px;width:600px" src="{{user_gallery.gallery}}"/>
+      <!-- <img style="height:400px;width:600px"src="./assets/8.png"/>
+      <img style="height:400px;width:600px"src="./assets/8.jpg"/> -->
+
+     
+  <!-- </div>
+</section> -->
+</div>
+
+
+</div>
+
+
+</div>
+<div style="margin-left:100px;margin-top:80px"class="column-md-4">
+  
+</div>
+
+</div>
